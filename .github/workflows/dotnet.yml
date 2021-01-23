@@ -34,5 +34,5 @@ jobs:
         # Name of the Azure Web App
         app-name: 'dotnetdemowebapp'
         # Applies to Web Apps(Windows and Linux) and Web App Containers(linux). Multi container scenario not supported. Publish profile (*.publishsettings) file contents with Web Deploy secrets
-        publish-profile: ${{secret.WEBAPP_PUBLISH_PROFILE}}        
+        publish-profile: ${{ secret.WEBAPP_PUBLISH_PROFILE }}        
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}       
